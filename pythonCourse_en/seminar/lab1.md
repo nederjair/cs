@@ -1,4 +1,5 @@
 # Laboratory work 1
+**all programs are written in `{python icon} python3`**
 
 ## problem 1
 write a program which perform the following actions:
@@ -10,23 +11,23 @@ write a program which perform the following actions:
 ---
 
 ## problem 2
-напишите программу, которая спрашивает пользователя:
-- год рождения пользователя
-- текующий год
-- возраст A от 0 до текущего возраста пользователя
+write a program that asks the user:
+- user's year of birth.
+- the current year.
+- a year `x`.
 
-**программа должна вычислить и сообщть пользователю:**
-1. возраст пользователя
-2. сколько год назад пользователь имел возраст A
+**the program must calculate:**
+1. the user's age.
+2. what was or will be the user's age in the year `x`
 ---
 
-## задание 3
-Написать программу реализующую следующие действия:
+## problem 3
+write a program that perform the next actions:
 
-1. Инициализировать переменную x значением 2
-2. Прибавить 3 к x и присвоить это значение x
-3. Вычислить (x+1)/2 и присвоить это значение x
-4. Вычислить x+1/2 и присвоить это значение x
-5. Изменить тип x в символьный и присвоить результат переменной x
+1. initialize a variable `x` with the value of `2`.
+2. add `3` to `x` and the result assign it to `x`.
+3. calcualte `(x+1)/2` and assign the result to `x`.
+4. calculate `x+1/2` and assign the result to `x`.
+5. change the data type of `x` to `str` and assign the result to `x`.
 
-**После каждой операции выводить значение переменной x и её тип.**
+**after every operation show the value of `x` and its type**
