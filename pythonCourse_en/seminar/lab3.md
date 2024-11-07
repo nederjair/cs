@@ -1,5 +1,5 @@
 # Laboratory work 3
-**all programs are written in `{python icon} python3`**`**
+**all programs are written in `{python icon} python3`**
 ### problem 1
 Write a program that ask the user a four-digit number and tells the user if the number is a *"happy"* number. A *"happy"* number is a symmetrical number of the type:
 
