@@ -1,17 +1,12 @@
-# First semester `{c icon}language` project
+# First semester `{python icon}language` project
 
 ## Brief description
-one of the following projects must be selected for its implementation in the C programming language:
+one of the following games (console terminal) must be selected for its implementation in the `{python icon} programming language` :
 
-1. embedded systems
-2. terminal (operative system terminal) game
-    - snake game
-    - who wants to be a millionaire game
-    - Sudoku game
-    - guess a word game
-3. function approximation library
-4. lineal equation system solver
-5. differential equation solver
+1. snake game
+2. who wants to be a millionaire game
+3. Sudoku game
+4. guess a word game
 
 ## Requirements
 
@@ -36,7 +31,6 @@ The report is a pdf file which must contain:
 5. Solution formulation
     - solving algorithm formulation
     - diagram of the solving algorithm
-    - block diagram by functionality
 6. Code implementation
     - code explanation by functionality
 7. Results
@@ -49,4 +43,4 @@ The report is a pdf file which must contain:
 The next products must be done, working and sent before the deadline
 
 1. A written report in pdf format.
-2. All the `C` code used for the project.
+2. All the `python` code used for the project.
