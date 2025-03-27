@@ -1,1 +1,2 @@
-*.obsidian/
+**.obsidian/
+**__pycache__
