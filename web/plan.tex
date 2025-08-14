@@ -1,0 +1,103 @@
+\documentclass[a4paper,14pt]{extarticle}
+\usepackage[top=0.5cm,bottom=0.5cm, left=0.5cm, right=0.5cm]{geometry}
+%\usepackage{showframe}
+\usepackage[T1,T2A]{fontenc}
+\usepackage[english, russian]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{tempora}
+\usepackage{booktabs} % For professional-looking tables
+\usepackage{multirow} % For multi-row cells
+\usepackage{array} % For enhanced column formatting
+\usepackage{xcolor} % For coloring cells
+\usepackage{colortbl} % For colored tables
+\usepackage{tabularx}
+
+
+\definecolor{lightblue}{rgb}{0.85,0.95,1}
+\definecolor{lightgray}{rgb}{0.95,0.95,0.95}
+
+% Column type that wraps text and centers
+\newcolumntype{Y}{>{\centering\arraybackslash}p{2.5cm}} % Fixed width with wrapping
+\newcolumntype{Z}{>{\raggedright\arraybackslash}p{3cm}} % Left-aligned with wrapping
+\begin{document}
+
+\begin{table}[ht]
+\centering
+\begin{tabular}{|c|c|c|c|c|c|}
+\hline
+%\multicolumn{2}{|c|}{\textbf{Combined Header}} & \multicolumn{3}{c|}{\textbf{Performance Metrics}} & \textbf{Total} \\
+%\cline{3-5}
+\rowcolor{lightblue}
+\textbf{Неделя} & \textbf{Subcategory} & \textbf{Precision} & \textbf{Recall} & \textbf{F1-Score} & \textbf{Score} \\
+\hline
+\multirow{3}{*}{1} & Введение в веб-разработку и основы HTML & Как работает интернет (HTTP, браузеры, серверы) &  Структура HTML-документа (<!DOCTYPE>, <html>, <head>, <body>) & Основные теги (<h1>, <p>, <a>, <img>, списки) & lakjsdljasd\\
+\cline{2-5}
+ & Medium & 0.89 & 0.91 & 0.90 & \\
+\cline{2-5}
+ & Long & 0.85 & 0.86 & 0.85 & \\
+\hline
+\multirow{3}{*}{Text} & Short & 0.92 & 0.88 & 0.90 & \multirow{3}{*}{0.89} \\
+\cline{2-5}
+ & Medium & 0.89 & 0.91 & 0.90 & \\
+\cline{2-5}
+ & Long & 0.85 & 0.86 & 0.85 & \\
+\hline
+\multirow{2}{*}{Image} & Small & 0.95 & 0.94 & 0.94 & \multirow{2}{*}{0.93} \\
+\cline{2-5}
+ & Large & 0.91 & 0.92 & 0.91 & \\
+\hline
+\multicolumn{5}{|r|}{\textbf{Grand Total}} & 0.91 \\
+\hline
+\end{tabular}
+\end{table}
+
+\begin{table}[ht]
+\centering
+\caption{Table with Automatic Text Wrapping (Excel-like)}
+\begin{tabular}{Z Y Y Y r}
+\toprule
+\multirow{2}{*}{Category (Auto-Wrapped if Too Long)} & \multirow{2}{*}{Subcategory} & \multicolumn{3}{c}{Performance Metrics} & \multirow{2}{*}{Score} \\
+\cmidrule(lr){3-5}
+ & & Precision & Recall & F1-Score & \\
+\midrule
+\multirow{3}{*}{Text Processing and Natural Language Understanding} 
+ & Short text documents & 0.92 & 0.88 & 0.90 & \multirow{3}{*}{0.89} \\
+ & Medium length documents & 0.89 & 0.91 & 0.90 & \\
+ & Very long documents with complex structure & 0.85 & 0.86 & 0.85 & \\
+\midrule
+\multirow{2}{*}{Image Analysis and Computer Vision Tasks} 
+ & Small low-resolution images & 0.95 & 0.94 & 0.94 & \multirow{2}{*}{0.93} \\
+ & Large high-resolution images & 0.91 & 0.92 & 0.91 & \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+
+\begin{table}[ht]
+\centering
+\caption{Example of a Beautiful Table with Subcells}
+\label{tab:example}
+\begin{tabular}{|>{\columncolor{lightgray}}c|c|c|c|c|c|}
+\hline
+\rowcolor{lightblue}
+\multicolumn{2}{|c|}{\textbf{Combined Header}} & \multicolumn{3}{c|}{\textbf{Performance Metrics}} & \textbf{Total} \\
+\cline{3-5}
+\rowcolor{lightblue}
+\textbf{Category} & \textbf{Subcategory} & \textbf{Precision} & \textbf{Recall} & \textbf{F1-Score} & \textbf{Score} \\
+\hline
+\multirow{3}{*}{Text} & Short & 0.92 & 0.88 & 0.90 & \multirow{3}{*}{0.89} \\
+\cline{2-5}
+ & Medium & 0.89 & 0.91 & 0.90 & \\
+\cline{2-5}
+ & Long & 0.85 & 0.86 & 0.85 & \\
+\hline
+\multirow{2}{*}{Image} & Small & 0.95 & 0.94 & 0.94 & \multirow{2}{*}{0.93} \\
+\cline{2-5}
+ & Large & 0.91 & 0.92 & 0.91 & \\
+\hline
+\multicolumn{5}{|r|}{\textbf{Grand Total}} & 0.91 \\
+\hline
+\end{tabular}
+\end{table}
+
+\end{document}
